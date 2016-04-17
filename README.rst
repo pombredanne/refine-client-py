@@ -1,9 +1,9 @@
 ===================================
-Google Refine Python Client Library
+OpenRefine Python Client Library
 ===================================
 
-The Google Refine Python Client Library provides an interface to
-communicating with a Google Refine server.
+The OpenRefine Python Client Library provides an interface to
+communicating with an `OpenRefine <http://openrefine.org/>`_ server.
 
 Currently, the following API is supported:
 
@@ -43,8 +43,8 @@ Currently, the following API is supported:
 Configuration
 =============
 
-By default the Google Refine server URL is http://127.0.0.1:3333
-The environment variables ``GOOGLE_REFINE_HOST`` and ``GOOGLE_REFINE_PORT``
+By default the OpenRefine server URL is http://127.0.0.1:3333
+The environment variables ``OPENREFINE_HOST`` and ``OPENREFINE_PORT``
 enable overriding the host & port.
 
 In order to run all tests, a live Refine server is needed. No existing projects
@@ -60,8 +60,10 @@ frameworks is very welcome to improve/"best practice" all this.)
 
    ``sudo pip install -r requirements.txt``
 
+   (If you don't have ``pip`` visit `pip-installer.org <http://www.pip-installer.org/en/latest/installing.html#install-or-upgrade-pip>`_)
+
 #. Ensure you have a Refine server running somewhere and, if necessary, set
-   the envvars as above.
+   the environment vars as above.
 
 #. Run tests, build, and install:
 
@@ -90,7 +92,7 @@ currently include:
 Contribute
 ============
 
-Patches welcome! Source is at https://github.com/PaulMakepeace/refine-client-py
+Pull requests with passing tests welcome! Source is at https://github.com/PaulMakepeace/refine-client-py
 
 Useful Tools
 ------------
@@ -101,12 +103,18 @@ One aspect of development is watching HTTP transactions. To that end, I found
 format JSON but the `Online JavaScript Beautifier <http://jsbeautifier.org/>`_
 will.
 
+History
+=======
+
+OpenRefine used to be called Google Refine, and this library used to be called
+the Google Refine Python Client Library.
+
 Credits
 =======
 
 Paul Makepeace, author, <paulm@paulm.com>
 
-David Huynh, `initial cut <http://groups.google.com/group/google-refine/msg/ee29cf8d660e66a9>`_
+David Huynh, `initial cut <http://markmail.org/message/jsxzlcu3gn6drtb7>`_
 
 `Artfinder <http://www.artfinder.com/>`_, inspiration
 

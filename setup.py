@@ -20,13 +20,14 @@ import os
 from setuptools import setup
 from setuptools import find_packages
 
-def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+
+def read(filename):
+    return open(os.path.join(os.path.dirname(__file__), filename)).read()
 
 setup(name='refine-client',
       version='0.2.1',
-      description=('The Google Refine Python Client Library provides an '
-                   'interface to communicating with a Google Refine server.'),
+      description=('The OpenRefine Python Client Library provides an '
+                   'interface to communicating with an OpenRefine server.'),
       long_description=read('README.rst'),
       author='Paul Makepeace',
       author_email='paulm@paulm.com',
@@ -35,13 +36,13 @@ setup(name='refine-client',
       install_requires=['urllib2_file'],
       platforms=['Any'],
       classifiers = [
-        'Development Status :: 3 - Alpha',
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: GNU General Public License (GPL)',
-        'Operating System :: OS Independent',
-        'Programming Language :: Python',
-        'Topic :: Software Development :: Libraries :: Python Modules',
-        'Topic :: Text Processing',
+          'Development Status :: 3 - Alpha',
+          'Intended Audience :: Developers',
+          'License :: OSI Approved :: GNU General Public License (GPL)',
+          'Operating System :: OS Independent',
+          'Programming Language :: Python',
+          'Topic :: Software Development :: Libraries :: Python Modules',
+          'Topic :: Text Processing',
       ],
       test_suite='tests',
 )
